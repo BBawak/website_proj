@@ -131,7 +131,7 @@
     <!-- services -->
     <section class="services-section" id="services">
         <h1 class="section-title" data-aos="fade-up">Why Us ?</h1>
-        <p class="section-para" data-aos="fade-up">We provide the safest abd best experience for all clients. </p>
+        <p class="section-para" data-aos="fade-up">We provide the safest and best experience for all clients. </p>
 
         <!-- services grid -->
         <div class="serives-grid">
@@ -160,18 +160,68 @@
     <section class="book-section" id="booknow">
         <div class="book-content" data-aos="fade-up">
             <h1 class="book-now-title">Book your travel today</h1>
-            <p class="book-now-text">Give yourself and your family a peacfull and wonderful vacation this holiday</p>
+            <p class="book-now-text">Give yourself and your family a peacefull and wonderful vacation this holiday</p>
 
-            <button class="book-now">book now</button>
+           
+
+            <!-- Book Now Button -->
+    <button onclick="showBookingForm()" class="book-now">Book Now</button>
+
+    <!-- The form -->
+    <div id="bookingForm">
+      <br><br>
+      <form action="mailto:bbawak1@my.westga.edu" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone number">Phone Number:</label>
+            <input type="text" id="phone number" name="phone number" required><br>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        // JavaScript function to show the form
+        function showBookingForm() {
+            var form = document.getElementById('bookingForm');
+            form.style.display = 'block';
+        }
+    </script>
+
         </div>
         <div class="bg-circle-2"></div>
         <img src="img/book.png" data-aos="fade-up" class="book-now-img" alt="">
 
-        
+    
   
     
   
     </section>
+
+
+  
+      <script>
+          // JavaScript function to show the form
+          function showForm() {
+              var form = document.getElementById('myForm');
+              form.style.display = 'block';
+          }
+      </script> 
+
+
+
+
+
+
+
+
 
     <!-- footer -->
     <footer class="footer">
